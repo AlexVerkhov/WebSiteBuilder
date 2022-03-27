@@ -17,6 +17,8 @@ class WebSiteBuilderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         // TODO: здесь внутри методов бесполезно вызывается обновление высоты скролл вью
         addTitle()
         addSubTitle()
@@ -45,12 +47,15 @@ extension WebSiteBuilderViewController {
         titleBlock.isScrollEnabled = false
         titleBlock.font = FontStyle.title
         
+        titleBlock.delegate = self
+        
         //textBlock.font = subtitleTextView.font
         //scrollViewUpdateHeight()
         //addBlockTypeView.isHidden = true
         
         webSiteStackView.insertArrangedSubview(titleBlock, at: webSiteStackView.subviews.count)
         scrollViewHeightUpdate()
+        
     }
     
     private func addSubTitle(with text: String? = nil) {
@@ -58,6 +63,8 @@ extension WebSiteBuilderViewController {
         subTitleBlock.text = text ?? "Подзаголовок"
         subTitleBlock.isScrollEnabled = false
         subTitleBlock.font = FontStyle.subTitle
+        
+        subTitleBlock.delegate = self
         
         //textBlock.font = subtitleTextView.font
         //scrollViewUpdateHeight()
@@ -73,12 +80,15 @@ extension WebSiteBuilderViewController {
         textBlock.isScrollEnabled = false
         textBlock.font = FontStyle.text
         
+        textBlock.delegate = self
+        
         //textBlock.font = subtitleTextView.font
         //scrollViewUpdateHeight()
         //addBlockTypeView.isHidden = true
         
         webSiteStackView.insertArrangedSubview(textBlock, at: webSiteStackView.subviews.count)
         scrollViewHeightUpdate()
+        
     }
     
     private func addDivider(height: Int = 10) {
@@ -101,8 +111,8 @@ extension WebSiteBuilderViewController {
         // TODO: Здесь необходимо точнее выверить высоту стэка на разных этапах
         let contentWidth = webSiteScrollView.bounds.width - 40
         
-        print(webSiteStackView.frame.height)
-        print(webSiteScrollView.frame.height)
+        //print(webSiteStackView.frame.height)
+        //print(webSiteScrollView.frame.height)
         
         let contentHeight = webSiteStackView.frame.height < webSiteScrollView.frame.height
             ? webSiteScrollView.frame.height
@@ -112,6 +122,13 @@ extension WebSiteBuilderViewController {
     }
 }
 
+// MARK: - Text Field Delegate
+extension WebSiteBuilderViewController: UITextViewDelegate {
+    // при вводе новой буквы нужно бы проверить, изменилась ли высота элемента и если да - то обновить скролл вью
+    func textViewDidChange(_ textView: UITextView) {
+        scrollViewHeightUpdate()
+    }
+}
 
 // MARK: - Save and Load scheme
 extension WebSiteBuilderViewController {
