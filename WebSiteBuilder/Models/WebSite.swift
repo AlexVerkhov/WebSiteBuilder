@@ -5,8 +5,6 @@
 //  Created by Алексей Верховых on 27.03.2022.
 //
 
-//import Foundation
-
 struct WebSite {
     var name: String
     var domain: String
@@ -19,16 +17,16 @@ struct WebSitePage {
     var title: String
     var description: String
     var keywords: String
-    var websiteBlocks: [WebsiteBlock]
+    var websiteBlocks: [WebSiteBlock]
 }
 
-struct WebsiteBlock {
-    let type: WebsiteBlockType
-    let text: String?
+struct WebSiteBlock {
+    let type: WebSiteBlockType
     let image: String?
+    var text: String?
 }
 
-enum WebsiteBlockType {
+enum WebSiteBlockType {
     case title
     case text
     case image
