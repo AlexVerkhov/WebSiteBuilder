@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web Site Builder View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WebSiteBuilderViewController" customModule="WebSiteBuilder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cmf-OX-n8G">
+                                <rect key="frame" x="20" y="44" width="374" height="830"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h43-b1-Ucl">
+                                        <rect key="frame" x="0.0" y="0.0" width="366.5" height="138"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="h43-b1-Ucl" firstAttribute="width" secondItem="cmf-OX-n8G" secondAttribute="width" multiplier="0.96" id="knD-ya-U5G"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Fu2-2r-zoK"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="bYD-rJ-SEV"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cmf-OX-n8G" secondAttribute="trailing" constant="10" id="3pf-2A-G28"/>
+                            <constraint firstItem="cmf-OX-n8G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4uP-hC-8MN"/>
+                            <constraint firstAttribute="bottom" secondItem="cmf-OX-n8G" secondAttribute="bottom" constant="20" id="PFg-k6-CJZ"/>
+                            <constraint firstItem="cmf-OX-n8G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pwm-58-5l2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webSiteScrollView" destination="cmf-OX-n8G" id="Mdr-Vk-hGc"/>
+                        <outlet property="webSiteStackView" destination="h43-b1-Ucl" id="tSP-9N-DKd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.072463768116" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
