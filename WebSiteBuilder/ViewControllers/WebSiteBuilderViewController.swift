@@ -17,6 +17,9 @@ class WebSiteBuilderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        webSiteScrollView.backgroundColor = .white
+        webSiteStackView.backgroundColor = .white
+        
         if let _ = websitePage {
             if websitePage.websiteBlocks.isEmpty { websitePage.websiteBlocks = DataManager.getDemoPageBlocks() }
         } else {
