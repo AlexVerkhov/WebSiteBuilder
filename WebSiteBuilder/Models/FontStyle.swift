@@ -9,7 +9,7 @@ import UIKit
 
 struct FontStyle {
     static var title: UIFont {
-        guard let font = UIFont(name: "HelveticaNeue-Bold", size: 24) else { fatalError("Failed to load the font") }
+        guard let font = UIFont(name: "HelveticaNeue-Bold", size: 32) else { fatalError("Failed to load the font") }
         return font
     }
     

@@ -70,3 +70,7 @@ enum DefaultTextFor: String {
     case subtitle = "Отредактируйте подзаголовок вашего сайта"
     case text = "Разместите здесь описание вашего продукта или услуги. Вы можете отредактировать этот текст - просто нажмите на него"
 }
+
+struct WebSiteConstants {
+    static let blockHeightDefault = 50
+}
