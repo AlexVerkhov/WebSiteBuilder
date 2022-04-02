@@ -17,7 +17,6 @@
 		25DA79D127F054F3005B35B6 /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA79D027F054F2005B35B6 /* FontStyle.swift */; };
 		25DA79D327F160FD005B35B6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA79D227F160FD005B35B6 /* DataManager.swift */; };
 		25DA79D627F16863005B35B6 /* UITextViewBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA79D527F16863005B35B6 /* UITextViewBlock.swift */; };
-		25DA79D827F178DA005B35B6 /* UIViewDividerBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DA79D727F178DA005B35B6 /* UIViewDividerBlock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		25DA79D027F054F2005B35B6 /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
 		25DA79D227F160FD005B35B6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		25DA79D527F16863005B35B6 /* UITextViewBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewBlock.swift; sourceTree = "<group>"; };
-		25DA79D727F178DA005B35B6 /* UIViewDividerBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewDividerBlock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +89,6 @@
 			children = (
 				2515701127F02FB3007DE7BE /* WebSiteBuilderViewController.swift */,
 				25DA79D527F16863005B35B6 /* UITextViewBlock.swift */,
-				25DA79D727F178DA005B35B6 /* UIViewDividerBlock.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -193,7 +190,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25DA79D827F178DA005B35B6 /* UIViewDividerBlock.swift in Sources */,
 				25DA79D627F16863005B35B6 /* UITextViewBlock.swift in Sources */,
 				2515701227F02FB3007DE7BE /* WebSiteBuilderViewController.swift in Sources */,
 				25DA79D327F160FD005B35B6 /* DataManager.swift in Sources */,

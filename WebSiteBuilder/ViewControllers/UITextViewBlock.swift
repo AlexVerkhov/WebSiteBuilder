@@ -9,6 +9,6 @@ import UIKit
 
 class UITextViewBlock: UITextView {
     
-    var blockType: WebSiteBlockType = .title
+    var blockType: pageBlockType = .title
     
 }

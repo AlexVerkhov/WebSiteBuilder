@@ -52,7 +52,7 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="addBlockChoicedAndClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWz-3e-MqW"/>
+                                                    <action selector="createBlockButtonsClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RAx-cD-sLV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CG2-2i-N17">
@@ -70,7 +70,7 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="addBlockChoicedAndClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R9f-Cu-Vvl"/>
+                                                    <action selector="createBlockButtonsClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mv8-ed-G2L"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pba-J6-Jmf">
@@ -88,7 +88,7 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="addBlockChoicedAndClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pw-Xt-xyL"/>
+                                                    <action selector="createBlockButtonsClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v5l-lN-cAA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcj-Y0-cT7">
@@ -106,7 +106,7 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="addBlockChoicedAndClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z15-li-uvc"/>
+                                                    <action selector="createBlockButtonsClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUE-Zu-2w0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saP-P4-GHN">
@@ -124,7 +124,7 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="addBlockChoicedAndClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSU-Q2-xKV"/>
+                                                    <action selector="createBlockButtonsClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="soj-89-Phu"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -138,17 +138,36 @@
                                 <rect key="frame" x="0.0" y="819" width="414" height="77"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0um-vb-NHA">
+                                <rect key="frame" x="344" y="733" width="70" height="86"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="bottom" ambiguous="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1EI-6D-Eec">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="86"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="1EI-6D-Eec" firstAttribute="leading" secondItem="0um-vb-NHA" secondAttribute="leading" id="0Us-ai-1NM"/>
+                                    <constraint firstAttribute="width" constant="70" id="1MW-RF-t6g"/>
+                                    <constraint firstAttribute="bottom" secondItem="1EI-6D-Eec" secondAttribute="bottom" constant="10" id="1TL-zq-dgH"/>
+                                    <constraint firstAttribute="trailing" secondItem="1EI-6D-Eec" secondAttribute="trailing" id="7NS-p1-oTh"/>
+                                    <constraint firstItem="1EI-6D-Eec" firstAttribute="top" secondItem="0um-vb-NHA" secondAttribute="top" constant="10" id="QgE-hZ-poE"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Pt-Bp-v2C">
                                 <rect key="frame" x="20.5" y="819" width="373" height="59"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVe-nO-eTq">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVe-nO-eTq">
                                         <rect key="frame" x="0.0" y="2.5" width="65" height="54.5"/>
                                         <buttonConfiguration key="configuration" style="plain" title="" imagePadding="0.0">
                                             <imageReference key="image" image="gearshape" catalog="system" symbolScale="medium"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" weight="light"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="pageSettingsButtonClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOg-zU-u1g"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPH-du-flC">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPH-du-flC">
                                         <rect key="frame" x="75.5" y="0.0" width="67" height="59"/>
                                         <buttonConfiguration key="configuration" style="plain" title="" imagePadding="0.0">
                                             <imageReference key="image" image="arrow.down.square" catalog="system" symbolScale="medium"/>
@@ -158,7 +177,7 @@
                                             <action selector="moveBlockButtonClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nLz-zh-djO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQF-Og-VfO">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQF-Og-VfO">
                                         <rect key="frame" x="153" y="5.5" width="66.5" height="48.5"/>
                                         <buttonConfiguration key="configuration" style="plain" image="plus.square.dashed" catalog="system" title="" imagePadding="0.0">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="29" weight="regular"/>
@@ -167,7 +186,7 @@
                                             <action selector="addBlockButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="ksj-vn-Hbn"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq7-Lz-w5d">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq7-Lz-w5d">
                                         <rect key="frame" x="229.5" y="0.0" width="67" height="59"/>
                                         <buttonConfiguration key="configuration" style="plain" title="" imagePadding="0.0">
                                             <imageReference key="image" image="arrow.up.square" catalog="system" symbolScale="medium"/>
@@ -177,12 +196,15 @@
                                             <action selector="moveBlockButtonClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jaq-nd-Uf9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQF-Gg-MmU">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQF-Gg-MmU">
                                         <rect key="frame" x="307" y="0.5" width="66" height="58"/>
                                         <buttonConfiguration key="configuration" style="plain" title="" imagePadding="0.0">
                                             <imageReference key="image" image="slider.vertical.3" catalog="system" symbolScale="medium"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="37" weight="light"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="blockSettingsButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="ICL-0E-ETW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -196,11 +218,13 @@
                             <constraint firstAttribute="bottom" secondItem="9Pt-Bp-v2C" secondAttribute="bottom" constant="18" id="KgN-VG-8ax"/>
                             <constraint firstAttribute="bottom" secondItem="cmf-OX-n8G" secondAttribute="bottom" constant="90" id="PFg-k6-CJZ"/>
                             <constraint firstItem="cmf-OX-n8G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pwm-58-5l2"/>
+                            <constraint firstItem="0um-vb-NHA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Tvk-T1-ZTb"/>
                             <constraint firstItem="5Mz-HF-Gch" firstAttribute="bottom" secondItem="aoS-uV-E8I" secondAttribute="top" id="XGy-ja-apr"/>
                             <constraint firstItem="5Mz-HF-Gch" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.975845" id="Yux-1z-m22"/>
                             <constraint firstItem="aoS-uV-E8I" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="aIj-yd-48U"/>
                             <constraint firstItem="5Mz-HF-Gch" firstAttribute="height" secondItem="aoS-uV-E8I" secondAttribute="height" id="esx-38-EGf"/>
                             <constraint firstItem="9Pt-Bp-v2C" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="kTx-2h-zR0"/>
+                            <constraint firstItem="0um-vb-NHA" firstAttribute="bottom" secondItem="aoS-uV-E8I" secondAttribute="top" id="mar-tq-LH5"/>
                             <constraint firstItem="9Pt-Bp-v2C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n0C-ib-QtG"/>
                             <constraint firstItem="aoS-uV-E8I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wla-ov-j3y"/>
                             <constraint firstAttribute="bottom" secondItem="aoS-uV-E8I" secondAttribute="bottom" id="yQa-Bp-lt0"/>
@@ -208,10 +232,17 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blockSelectorScrollView" destination="5Mz-HF-Gch" id="yUi-zf-XvD"/>
-                        <outlet property="blockSelectorStackView" destination="Ber-rq-EeD" id="Pwf-IQ-AWN"/>
-                        <outlet property="webSiteScrollView" destination="cmf-OX-n8G" id="Mdr-Vk-hGc"/>
-                        <outlet property="webSiteStackView" destination="h43-b1-Ucl" id="tSP-9N-DKd"/>
+                        <outlet property="blockSettingsStackView" destination="1EI-6D-Eec" id="Ohp-OW-2Y8"/>
+                        <outlet property="blockSettingsView" destination="0um-vb-NHA" id="FpU-Sd-N8A"/>
+                        <outlet property="newBlockSelectorScrollView" destination="5Mz-HF-Gch" id="yUi-zf-XvD"/>
+                        <outlet property="newBlockSelectorStackView" destination="Ber-rq-EeD" id="Pwf-IQ-AWN"/>
+                        <outlet property="pageScrollView" destination="cmf-OX-n8G" id="Mdr-Vk-hGc"/>
+                        <outlet property="pageStackView" destination="h43-b1-Ucl" id="tSP-9N-DKd"/>
+                        <outletCollection property="pageMenuBarButtons" destination="RVe-nO-eTq" collectionClass="NSMutableArray" id="u6v-iU-fc7"/>
+                        <outletCollection property="pageMenuBarButtons" destination="ZPH-du-flC" collectionClass="NSMutableArray" id="oWQ-J5-ipm"/>
+                        <outletCollection property="pageMenuBarButtons" destination="eQF-Og-VfO" collectionClass="NSMutableArray" id="Iwj-10-AYx"/>
+                        <outletCollection property="pageMenuBarButtons" destination="Rq7-Lz-w5d" collectionClass="NSMutableArray" id="7p7-EI-5w6"/>
+                        <outletCollection property="pageMenuBarButtons" destination="sQF-Gg-MmU" collectionClass="NSMutableArray" id="c4p-Wb-Lzg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -232,6 +263,9 @@
         <image name="textformat" catalog="system" width="128" height="78"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

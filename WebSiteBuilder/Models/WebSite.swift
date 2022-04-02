@@ -22,7 +22,7 @@ struct WebSitePage {
 }
 
 struct WebSiteBlock {
-    let type: WebSiteBlockType
+    let type: pageBlockType
     let image: String?
     var text: String?
     var value: Int?
@@ -31,21 +31,21 @@ struct WebSiteBlock {
 // MARK: - WebsiteBlock Init
 extension WebSiteBlock {
     
-    init(with blockType: WebSiteBlockType, andText text: String) {
+    init(with blockType: pageBlockType, andText text: String) {
         self.text = text
         type = blockType
         image = nil
         value = nil
     }
     
-    init(with blockType: WebSiteBlockType, andImage image: String) {
+    init(with blockType: pageBlockType, andImage image: String) {
         self.image = image
         type = blockType
         text = nil
         value = nil
     }
     
-    init(with blockType: WebSiteBlockType, andValue value: Int) {
+    init(with blockType: pageBlockType, andValue value: Int) {
         self.value = value
         type = blockType
         image = nil
@@ -54,7 +54,7 @@ extension WebSiteBlock {
 }
 
 // MARK: - Enums
-enum WebSiteBlockType {
+enum pageBlockType {
     case title
     case subtitle
     case text
@@ -72,5 +72,18 @@ enum DefaultTextFor: String {
 }
 
 struct WebSiteConstants {
-    static let blockHeightDefault = 50
+    static let maxBlocksPerPage = 500
+}
+
+enum webPageMenuButtons: Int {
+    case pageSettings = 0
+    case moveDown = 1
+    case addBlock = 2
+    case moveUp = 3
+    case blockSettings = 4
+}
+
+enum moveBlockWay {
+    case up
+    case down
 }
